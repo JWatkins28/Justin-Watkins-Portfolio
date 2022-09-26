@@ -1,9 +1,8 @@
 :root {
-  --backgroundc: #1d0e2c;
-  --color:  #4e69c3;
-  --color2: #3d4b91;
-  --accent: #2d2c5e;
-
+    --backgroundc: #1d0e2c;
+    --color:  #4e69c3;
+    --color2: #3d4b91;
+    --accent: #2d2c5e;
 }
 
 body {
