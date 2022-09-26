@@ -2,7 +2,7 @@
 
 ## **Description**
 
-This project was our first attempt at creating an entire site from scratch. I found this project to be very difficult and spent probably 10-15 hours on it, but I learned a ton about CSS in the process. I hope you enjoy it and stay tuned as i'm sure it will be updated as time goes on! 
+This project was our first attempt at creating an entire website from scratch using HTML and CSS that fulfills all the acceptance criteria. I found this project to be very difficult and spent probably 10-15 hours on it, but I learned a ton about CSS in the process. I hope you enjoy it and stay tuned as i'm sure it will be updated as time goes on! 
 
 Disclaimer: A lot of the "project" links are currently placeholders as I haven't created enough yet to fill all the slots up. They are some of my favorite resources i've used for practice/help so far this boot camp. This will be updated in the future as I make more projects!
 
