@@ -1,10 +1,12 @@
+/* || My Color Variables */
 :root {
   --backgroundc: #1d0e2c;
   --color:  #4e69c3;
   --color2: #3d4b91;
   --accent: #2d2c5e;
-
 }
+
+/* || Base Element Code */
 
 body {
   display: flex;
@@ -13,15 +15,12 @@ body {
   background-color: rgb(243, 229, 252);
 }
 
-.topHeader {
+main, article {
+  width: 90%;
   display: flex;
   flex: 1 1 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1% 2% 1% 0;
-  background-image: linear-gradient(var(--backgroundc), var(--accent));
-  color: #fff;
+  margin: 2% auto;
+
 }
 
 h1 {
@@ -36,6 +35,47 @@ h2 {
 
 h3 {
   font-size: 150%;
+}
+
+aside {
+  width: 20%;
+  border-right: 5px var(--backgroundc) inset;
+  color: var(--backgroundc);
+  min-width: 225px;
+  max-width: 245px;
+}
+
+footer {
+  text-align: center;
+  padding: 2%;
+  background-color: var(--backgroundc);
+  color: #fff;
+}
+
+/* … */
+
+/* Top section with links and my name and picture */
+
+.topHeader {
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1% 2% 1% 0;
+  background-image: linear-gradient(var(--backgroundc), var(--accent));
+  color: #fff;
+}
+
+.titlecard {
+  display:flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+}
+
+.titlecard img {
+  max-height: 350px;
+  box-shadow: 0px 5px 7px 2px black;
 }
 
 nav ul {
@@ -56,21 +96,9 @@ nav a:hover {
   transition: 0.2s;
 }
 
-main, article {
-  width: 90%;
-  display: flex;
-  flex: 1 1 100%;
-  margin: 2% auto;
+/* … */
 
-}
-
-aside {
-  width: 20%;
-  border-right: 5px var(--backgroundc) inset;
-  color: var(--backgroundc);
-  min-width: 225px;
-  max-width: 245px;
-}
+/* || Most of the code below is reused for multiple elements on the page */
 
 aside h2 {
   font-size: 150%;
@@ -89,27 +117,7 @@ aside h2 {
   justify-content: center;
 }
 
-#ProjectsSect {
-display: flex;
-flex-wrap: wrap;
-}
-
-.projectcontent {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1;
-  padding: 5px 50px 5px 5px;
-  justify-content: center;
-}
-
-.projectcontentLarge {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1;
-  padding: 5px 5px 5px 50px;
-  justify-content: center;
-}
-
+/* This is for the first large project picture */
 #bigcard {
   border: 4px inset var(--color2);
   flex: 0 0 100%;
@@ -124,6 +132,7 @@ flex-wrap: wrap;
   padding: 10px;
 }
 
+/* This is for the smaller project cards that follow  */
 .card {
   border: 4px inset var(--color2);
   padding: 10px;
@@ -135,15 +144,27 @@ flex-wrap: wrap;
   transition: 0.3s;
 }
 
-.titlecard {
-  display:flex;
-  flex-direction: column;
-  flex: 1 1 100%;
+#ProjectsSect {
+display: flex;
+flex-wrap: wrap;
 }
 
-.titlecard img {
-  max-height: 350px;
-  box-shadow: 0px 5px 7px 2px black;
+/* This is the container for the first large project picture */
+.projectcontentLarge {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 5px 5px 5px 50px;
+  justify-content: center;
+}
+
+/* This is the container for the following smaller project pictures */
+.projectcontent {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 5px 50px 5px 5px;
+  justify-content: center;
 }
 
 .TopLeftText {
@@ -204,16 +225,9 @@ flex-wrap: wrap;
   background-size: cover;
 }
 
+/* This is to make the text on the project cards not look like default links since the entire card is a link */
 div > a {
   text-decoration: none;
-  color: black;
-}
-
-footer {
-  text-align: center;
-  padding: 2%;
-  background-color: var(--backgroundc);
-  color: #fff;
 }
 
 #ContactSect {
@@ -246,7 +260,9 @@ footer {
   transition: 0.2s;
 }
 
+/* … */
 
+/* Compatability for smaller screens  */
 @media screen and (max-width: 900px) {
   header,
   body, main {
