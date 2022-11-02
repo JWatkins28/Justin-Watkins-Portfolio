@@ -122,7 +122,7 @@ aside h2 {
   border: 4px inset var(--color2);
   flex: 0 0 100%;
   box-shadow: 0px 0px 7px 5px #aaaaaa;
-  background-image: url("../Project1.jpg");
+  background-image: url("../themovielibrary.PNG");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -198,28 +198,28 @@ flex-wrap: wrap;
 }
 
 #card1 {
-  background-image: url("../card1.png");
+  background-image: url("../Project1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 #card2 {
-  background-image: url("../card2.png");
+  background-image: url("../javascriptquiz.PNG");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 #card3 {
-  background-image: url("../card3.png");
+  background-image: url("../weatherdashboard.PNG");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 #card4 {
-  background-image: url("../card4.png");
+  background-image: url("../workdayscheduler.PNG");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
