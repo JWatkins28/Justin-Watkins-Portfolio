@@ -198,9 +198,8 @@ flex-wrap: wrap;
 }
 
 #card1 {
-  background-image: url("../Project1.jpg");
+  background-image: url("../busybee.png");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
 }
 
